@@ -1,28 +1,1388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake's World</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Miller Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="./assets/images/mars.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Plane Banner -->
-    <div class="plane-container">
-        <img id="plane" src="./assets/images/plane_banner.png" alt="Plane">
-        <!-- Smoke Container -->
-        <div id="smoke-container"></div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/personal-avatar.png" alt="Jake Miller" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jake Miller">Jake Miller</h1>
+
+          <p class="title">Electrical and Computer Engineer</p>
+          <p class="title">Robotics | Neuroprosthesis</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
-    <!-- Start Button -->
-    <div class="welcome-container">
-        <img 
-            id="start-button" 
-            src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4d8349e217c1d18.png" 
-            alt="Start Button"
-        >
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:robert.jake.miller@gmail.com" class="contact-link">robert.jake.miller@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+18287021531" class="contact-link">+1 (828) 702-1531</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="2004-03-34">21</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Colorado Springs, Colorado, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jake-miller-0b23561b9/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/jakemil" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/jakemillr04/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an Electrical and Computer Engineering student at the United States Air Force Academy studying with
+            a focus in robotics. I believe that every human being has a natural right to see, hear, move, and fully experience
+            the richness of life. I intend to create a future where neurotechnology not only reclaims these experiences for
+            those who have lost them but also provides miracles that expand what it means to be human.
+          </p>
+
+          <p>
+            My unwavering passion has driven me to continuously expand my knowledge and refine my skills across a wide range of disciplines,
+            including robotics, computer engineering, electrical engineering, biomedical engineering, and neuroscience. Yet, the challenges
+            of human-computer interfaces extend beyond any single individual. Recognizing this, I’ve focused on developing strong
+            leadership and organizational skills, with the goal of uniting researchers worldwide around a common purpose. By integrating these
+            diverse areas of expertise, I aspire to pioneer the development of advanced neuroprosthetics that embody my vision for a transformative future.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/BCI.svg
+                  " alt="design icon" width="40">
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface" target="_blank">
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Brain Computer Interfacing</h4>
+
+                    <p class="service-item-text">
+                      Extending the use of neuromorphic computing into BCI research
+                    </p>
+                  </div>
+                </a>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/computer-vision.svg" alt="Computer Vision" width="40">
+              </div>
+
+              <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision</h4>
+
+                <p class="service-item-text">
+                  Testing and developing computer vision methods for affective facial computing as an assistive technology
+                </p>
+              </div>
+              </a>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/drone.svg" alt="SOCOM Tech Development" width="40">
+              </div>
+
+              <a href="https://ignite.ll.mit.edu/ignite/" target="_blank">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">SOCOM Tech Development</h4>
+
+                  <p class="service-item-text">
+                    Developing and testing new technologies for United States Special Operations
+                  </p>
+                </div>
+              </a>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/leader.svg" alt="Cadet Wing Commander" width="40">
+              </div>
+
+              <a href="https://en.wikipedia.org/wiki/United_States_Air_Force_Academy_Cadet_Wing#Leadership" target="_blank">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cadet Wing Commander</h4>
+
+                  <p class="service-item-text">
+                    Serving as the highest-ranking cadet, responsible for the welfare, leadership, and development
+                    of approximately 4,400 cadets.
+                  </p>
+                </div>
+              </a>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/parachuting.svg" alt="Wings of Blue Parachuting Team" width="40">
+              </div>
+
+              <a href="https://www.usafa.edu/wings-of-blue/" target="_blank">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Wings of Blue Parachuting Team</h4>
+
+
+                  <p class="service-item-text">
+                    Member of United States Air Force's Premier Parachuting Team. Certified as jump master, C-license demonstrator,
+                    and basic freefall instructor.
+                  </p>
+                </div>
+              </a>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">References</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/stanbaek.png" alt="Dr. Stanley Baek" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Stanley Baek</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Academic advisor for Jake's studies at the United States Air Force Academy.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Laszlo_AI.png" alt="Dr. László Jeni" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. László Jeni</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Computational Behavior (CUBE) lab director. Advisor and mentor to Jake on Computer Vision.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/mello.png" alt="Dr. Chad Mello" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Chad Mello</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Advisor to Jake at United States Air Force Academy on Brain Computer Interfacing.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/debock.png" alt="Lt Col Kelli DeBock" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Lt Col Kelli DeBock</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Commander of Cadet Squadron 15 - Jake's squadron at United States Air Force Academy.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2025-06-17">17 June, 2025</time>
+
+              <div data-modal-text>
+                <p>
+
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+        <!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">U.S. Air Force Academy</h4>
+              <span>2022 — 2026 (Expected)</span>
+              <p class="timeline-text">
+                B.S. in Electrical and Computer Engineering. Overall GPA: 3.99. Overall Order of Merit: 1/1071. Major GPA: 4.0.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Carnegie Mellon Robotics Institute Summer Scholar</h4>
+              <span>Summer 2025</span>
+              <p class="timeline-text">
+                Conducted research in the CUBE Lab under Dr. László Jeni, focusing on neurotechnology and graduate-level collaborative research.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">BCI SSVEP Filtering Researcher</h4>
+              <span>Spring 2025</span>
+              <p class="timeline-text">
+                Developed novel filtering methods for neural signal extraction under Dr. Chad Mellow at USAFA.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MITRE eCTF Embedded Systems Competitor</h4>
+              <span>Spring 2025</span>
+              <p class="timeline-text">
+                Designed secure embedded systems, focusing on encryption protocols, firmware analysis, and communication optimization.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Drone Range Extension Team Lead</h4>
+              <span>Fall 2024 — Present</span>
+              <p class="timeline-text">
+                Led team developing low-power video repeaters and mesh interior navigation under MIT Lincoln Lab and SOCOM Ignite.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Neuromorphic Visual Processing Researcher</h4>
+              <span>Fall 2024</span>
+              <p class="timeline-text">
+                Used Nengo to simulate visual pathways using biologically inspired neuromorphic computing models.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wearable Technology Researcher</h4>
+              <span>Summer 2024</span>
+              <p class="timeline-text">
+                Designed gait analysis tools using PCA, DBSCAN, and neural networks at Sandia National Laboratories. Presented at Corona Conference.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Quanser Autonomous Vehicle Developer</h4>
+              <span>Spring 2024</span>
+              <p class="timeline-text">
+                Built autonomous vehicle with PID control and camera vision in ROS for urban lane and traffic light navigation.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="footsteps-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Leadership</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cadet Wing Commander, USAFA</h4>
+              <span>Fall 2025</span>
+              <p class="timeline-text">
+                Highest-ranking cadet, commanding 4,400 cadets, responsible for their welfare, training, and organizational effectiveness.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Squadron Senior Enlisted Leader</h4>
+              <span>Fall 2024</span>
+              <p class="timeline-text">
+                Mentored 120 cadets; ranked top squadron mid-semester; advised squadron commander on training and readiness.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AM-490 Senior Enlisted Leader</h4>
+              <span>Fall 2024</span>
+              <p class="timeline-text">
+                Directed the development and execution of jump training for over 200 students, ensuring safety, performance, and readiness
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wing Tutoring Cadet in Charge</h4>
+              <span>Spring 2023 — Present</span>
+              <p class="timeline-text">
+                Managed tutoring operations in ECE; personally conducted 100+ hours of tutoring across STEM disciplines.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="medal-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Awards & Honors</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Goldwater Scholarship Nominee</h4>
+              <span>Spring 2025</span>
+              <p class="timeline-text">
+                One of four cadets nominated by USAFA for prestigious national STEM research scholarship.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">STAMPS Foundation Leader-Scholar Scholarship</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Received $22,000 research scholarship to pursue neurotechnology innovations in vision support.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wing Top Performing Senior Enlisted Leader</h4>
+              <span>Fall 2024</span>
+              <p class="timeline-text">
+                Personally recognized by the Commandant of Cadets, a Brigadier General overseeing cadet operations, for exceptional leadership and performance. Selected as the top Senior Enlisted Leader from a competitive field of 40 cadets
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Department of Faculty C2C Research Award </h4>
+              <span>Summer 2024</span>
+              <p class="timeline-text">
+                Honored by the Dean of Faculty for conducting the most impactful cadet-led research among all summer research programs undertaken by C2Cs (juniors in college) at USAFA
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Martinson Honors Program Scholar</h4>
+              <span>2022 — Present</span>
+              <p class="timeline-text">
+                Selected for USAFA’s premier academic enrichment program, providing an advanced, rigorous curriculum to promote critical thinking, analysis, and intellectual development. Seminar-style advanced academic honors program
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dean’s Ace/A-Team List</h4>
+              <span>5 Semesters</span>
+              <p class="timeline-text">
+                Achieved perfect 4.0 GPA across academics and PE; top academic distinction awarded to select cadets.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Extracurricular Activities</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Boxing Team Competitor</h4>
+              <span>Spring 2025</span>
+              <p class="timeline-text">
+                Competed in the Wing Open boxing tournament; reached semifinals through daily training.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wings of Blue Parachuting Team</h4>
+              <span>Summer 2024 — Present</span>
+              <p class="timeline-text">
+                Member of the U.S. Air Force’s elite parachuting team; instructor for over 200 students and demonstrator in public events.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wing SPARK Innovation Program</h4>
+              <span>Fall 2024 — Present</span>
+              <p class="timeline-text">
+                Member of cadet innovation team focused on academy-wide improvements and operational enhancements.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Leadership and Learning Lab Volunteer</h4>
+              <span>Fall 2023 — Present</span>
+              <p class="timeline-text">
+                Mentor to underserved elementary students in Colorado Springs through weekly engagement.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technical Research and Innovation</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Leadership and Organizational Management</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Embedded Systems and Robotics Engineering</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Software Engineering and Programming</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Brain Computer Interfacing</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Assistive Technology</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Robotics</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Brain Computer Interfacing</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Assistive Technology</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Robotics</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            -->
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list" id="blog-list">
+
+            <li class="blog-post-item">
+              <a href="#" onclick="showFullBlog('blog-2'); return false;">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/music.png" alt="The Movement of Music" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Thoughts</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-06-17">Jun 18, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Harnessing Music</h3>
+                  <p class="blog-text">
+                    A discussion of the power of music over our thought processes and how it can be leveraged to lead an intentional lifestyle.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="#" onclick="showFullBlog('blog-1'); return false;">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/beginning_of_an_era.jpg" alt="Beginning of Something New" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Thoughts</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-06-17">Jun 17, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">That Which We Call the Human Experience</h3>
+                  <p class="blog-text">
+                    A polite introduction
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!--
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            -->
+
+          </ul>
+
+           <!-- Hidden full blog content (replaces list when shown) -->
+            <div class="blog-full-content" id="blog-1" style="display: none;">
+              <h3 class="h3">That Which We Call the Human Experience</h3>
+              <p class="blog-text" style="margin-bottom: 10px;">
+                I’ll start by saying, I’ve always tried to keep track of those stories and experiences that cause me to stop and observe momentarily. Those elusive moments that feel a little bit deeper than can be captured by a camera or a microphone. Those moments that strike a chord which can only be experienced by the human spirit. I believe those moments, whether grand or small, bright or dark, are the reason we wake to see another day. We should all be driven by the celebration of beauty and excellence in the world. An eternal race to capture a beautiful moment. The photographer and a new perspective. The scientist and a new discovery. The student and a consistent mark. The athlete and a new record. But it isn’t achievement that makes those moments special. It's the reflection they caste of something we can all relate to. Sadness and joy...anger and peace...heartache and bliss...hatred and love.
+              </p>
+              <p class="blog-text" style="margin-bottom: 10px;">
+                And what's more, these are all found in the daily experience. In the birth of a child. The sun rise and sun set. The coy smile of stranger. The first time a child walks. The warm embrace of a relative. The last drive with your friends down a nostalgic road before life takes you in different directions. I am reminded of the scene Lois Lowry paints in the Giver when Jonas releases the memories to the community. The film portrays it as a flash of experience in the character’s minds. I like this illustration, because the scenes of human experience are not uncommon, but those small, beautiful moments. I argue that we should not take these for granted, not let them go unnoticed, but instead hold them close as a driving force in each of our lives - perpetuating the beauty and excellence of that which we call the human experience. Let them be that which they are.
+              </p>
+              <video width="640" height="360" controls>
+                <source src="./assets/images/the_giver.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="blog-text" style="margin-bottom: 10px;">
+                Regardless, I am starting this blog because I have always tried to record those moments - quotes, scenes, moments in documentaries, that strike a little deeper and that I don’t want to forget. As I prepare for my role in the fall as wing commander, I have spent a lot of time reflecting on these moments, and how I can share them in a way that strikes that same chord as it did for me as inspiration.
+              </p>
+              <p class="blog-text">
+                I’ll try to post daily the stories and musings that I have, whether thought of or seen. From scientific research on neuroprosthesis to the most intimate details in art. Inspired by all of the wonderful people I have met and the challenging problems I have faced. Consider this a ‘knowledge reservoir’ of sorts to keep track of all my lessons learned.
+              </p>
+
+              <button class="blog-text" onclick="backToBlog()" style="margin-top: 1rem;">← Back to Blog</button>
+            </div>
+
+            <div class="blog-full-content" id="blog-2" style="display: none;">
+              <h3 class="h3">Harnessing Music</h3>
+              <p class="blog-text" style="margin-bottom: 10px;">
+              This one will probably be a little bit shorter, but I just wanted to talk about a trend I’ve started to observe in my life over the recent semester. First, I need to paint the picture:
+              </p>
+
+              <ul class="blog-text" style="list-style-type: disc; padding-left: 20px; margin-bottom: 10px;">
+                <li>As I sit here and write, I listen to indie folk on an album on Spotify called “My Life is a Movie.”</li>
+                <li>Before any interview, I listen to Space Song by Beach House and Helplessness Blues by Fleet Foxes.</li>
+                <li>While on a run, I listen to 180 BPM EDM music and remixes.</li>
+                <li>While lifting, I listen to 2010s rap hits.</li>
+                <li>While researching, I listen to smooth instrumental jazz or French Cafe music.</li>
+                <li>While in the car, I listen to a playlist that my friends and I created in high school (I’ll talk about my friends and the special bond we had in the following article - that may need to be a series on second thought)</li>
+                <li>I listen to 6 Foot 7 Foot by Lil Wayne to get hyped up.</li>
+              </ul>
+
+              <p class="blog-text" style="margin-bottom: 10px;">
+              You probably know where I’m going with this now, but let me provide more details. Since I started this, I’ve noticed that I can use music to harness and move my thoughts exactly when needed. Before an interview, I need to put my brain into a mode of reflection and intellect; I do that by listening to Space Song, which evokes a bit of sadness and pure nostalgia. Breaking it down, the song can do this because of the strong use of reverb and echo, the minor keys and modal progression, the slow tempo, the airy and distant vocals, and the simplicity. Together, these musical paradigms can inspire a corresponding spirit in the listener’s mind.
+              </p>
+              <audio controls>
+                <source src="./assets/images/Beach%20House%20-%20Space%20Song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <p class="blog-text" style="margin-bottom: 10px;">
+              My mind immediately wonders to memories with friends, moments in my life that I felt have been truly impactful, my family and teachers who taught me so much, my failures and regrets, the many tears I’ve cried, but also the many smiles I’ve worn, the faces of those I love, and the words of those I cherish (I’m listening to it right now haha if you couldn’t notice). But that is precisely the mood and state of mind you need to be in to crush an interview beside yourself.
+              </p>
+
+              <p class="blog-text" style="margin-bottom: 10px;">
+              But then, to hype myself up, I listen to music that embodies just the opposite. A bass that rattles your brain, fast-paced lyrics, all almost sustained build-up, the kind of mob chant, and long, unbroken streams.
+              </p>
+
+              <p class="blog-text" style="margin-bottom: 10px;">
+              I guess I’m arguing that the diverse genres and concepts of music theories can be used and implemented into your life in such a way as to gain control of your very mind. To never feel like you are in the wrong mood – tired, sad, too pumped up, etc. Go into a quiet place and listen; let the music carry you. It’s almost a sort of neurotechnology, haha (to connect things). Music is a stimulant that can take us to new heights, so I thought I would share my experience.
+              </p>
+
+              <p class="blog-text" style="margin-bottom: 10px;">
+              To take it further, the actual skill would be to possess this ability without music as a stimulant. I believe music is a good way to put on the training wheels and practice the ability to wield your emotions as a weapon for control. Alright, I gotta get back to work, until tmr!
+              </p>
+
+              <button class="blog-text" onclick="backToBlog()" style="margin-top: 1rem;">← Back to Blog</button>
+            </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtVAcXNhSE4cRMm8PpkAQ9mE&key=AIzaSyDHgmgvH-GlvMYxniT-TU55svkJFjKe5Lg"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/meokzaya" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-    <script src="script.js"></script>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
